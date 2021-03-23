@@ -26,7 +26,7 @@ public class JDBCConfiguration {
 
 		}
 
-		JDBCConfiguration instance = new JDBCConfiguration("jdbc:mysql://192.168.56.101/maven", "gpi2", "network");
+		JDBCConfiguration instance = new JDBCConfiguration("jdbc:mysql://127.0.0.1/projetmaven", "root", "root");
 		return instance;
 	}
 
