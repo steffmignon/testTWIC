@@ -20,7 +20,21 @@ public class Ville {
         this.longitude = longitude;
     }
 
-    public int getCodeINSEE() {
+    public Ville(Ville ville) {
+    	this.codeINSEE = ville.getCodeINSEE();
+        this.nomCommune = ville.getNomCommune();
+        this.CP = ville.getCP();
+        this.libelleAcheminement = ville.getLibelleAcheminement();
+        this.ligne_5 = ville.getLigne_5();
+        this.lattitude = ville.getLattitude();
+        this.longitude = ville.getLongitude();
+	}
+
+	public Ville() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getCodeINSEE() {
         return codeINSEE;
     }
     public void setCodeINSEE(int codeINSEE) {
@@ -63,6 +77,11 @@ public class Ville {
         this.longitude = longitude;
     }
 
-
+	@Override
+	public String toString() {
+		return "Ville [codeINSEE=" + codeINSEE + ", nomCommune=" + nomCommune + ", CP=" + CP + ", libelleAcheminement="
+				+ libelleAcheminement + ", ligne_5=" + ligne_5 + ", lattitude=" + lattitude + ", longitude=" + longitude
+				+ "]";
+	}
 
 }

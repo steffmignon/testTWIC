@@ -25,8 +25,8 @@ public class JDBCConfiguration {
 		} catch (ClassNotFoundException e) {
 
 		}
-
-		JDBCConfiguration instance = new JDBCConfiguration("jdbc:mysql://127.0.0.1/projetmaven", "root", "root");
+		
+		JDBCConfiguration instance = new JDBCConfiguration("jdbc:mysql://localhost:3306/projetmaven", "root", "root");
 		return instance;
 	}
 
