@@ -78,6 +78,8 @@ public class VilleDaoImpl implements VilleDao {
 			org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(Application.class);
 			logger.log(null, "contexte", e);
 		} finally {
+			pstmt.close();
+			
 		}
 		return ville;
 
@@ -104,7 +106,7 @@ public class VilleDaoImpl implements VilleDao {
 			}
 
 		}
-		return "Ville supprimÃ©";
+		return "Ville supprimé";
 	}
 
 	@Override
@@ -128,7 +130,7 @@ public class VilleDaoImpl implements VilleDao {
 			}
 
 		}
-		return "Ville insÃ©rÃ©";
+		return "Ville inséré";
 	}
 
 	@Override
