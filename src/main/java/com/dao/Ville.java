@@ -4,18 +4,19 @@ public class Ville {
 
     private int codeINSEE;
     private String nomCommune;
-    private int CP;
+    private int codePostal;
     private String libelleAcheminement;
-    private String ligne_5;
+    private String ligne5;
     private String lattitude;
     private String longitude;
 
-    public Ville(int codeINSEE,String commune,int cp,String libelleAcheminement,String ligne_5, String lattitude, String longitude) {
+    public Ville(int codeINSEE,String commune,int cp,String libelleAcheminement,
+    		String ligne5, String lattitude, String longitude) {
         this.codeINSEE = codeINSEE;
         this.nomCommune = commune;
-        this.CP = cp;
+        this.codePostal = cp;
         this.libelleAcheminement = libelleAcheminement;
-        this.ligne_5 = ligne_5;
+        this.ligne5 = ligne5;
         this.lattitude = lattitude;
         this.longitude = longitude;
     }
@@ -23,15 +24,15 @@ public class Ville {
     public Ville(Ville ville) {
     	this.codeINSEE = ville.getCodeINSEE();
         this.nomCommune = ville.getNomCommune();
-        this.CP = ville.getCP();
+        this.codePostal = ville.getCP();
         this.libelleAcheminement = ville.getLibelleAcheminement();
-        this.ligne_5 = ville.getLigne_5();
+        this.ligne5 = ville.getLigne5();
         this.lattitude = ville.getLattitude();
         this.longitude = ville.getLongitude();
 	}
 
 	public Ville() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public int getCodeINSEE() {
@@ -47,10 +48,10 @@ public class Ville {
         this.nomCommune = nomCommune;
     }
     public int getCP() {
-        return CP;
+        return codePostal;
     }
     public void setCP(int cP) {
-        CP = cP;
+        codePostal = cP;
     }
     public String getLibelleAcheminement() {
         return libelleAcheminement;
@@ -58,11 +59,11 @@ public class Ville {
     public void setLibelleAcheminement(String libelleAcheminement) {
         this.libelleAcheminement = libelleAcheminement;
     }
-    public String getLigne_5() {
-        return ligne_5;
+    public String getLigne5() {
+        return ligne5;
     }
-    public void setLigne_5(String ligne_5) {
-        this.ligne_5 = ligne_5;
+    public void setLigne5(String ligne5) {
+        this.ligne5 = ligne5;
     }
     public String getLattitude() {
         return lattitude;
@@ -79,8 +80,8 @@ public class Ville {
 
 	@Override
 	public String toString() {
-		return "Ville [codeINSEE=" + codeINSEE + ", nomCommune=" + nomCommune + ", CP=" + CP + ", libelleAcheminement="
-				+ libelleAcheminement + ", ligne_5=" + ligne_5 + ", lattitude=" + lattitude + ", longitude=" + longitude
+		return "Ville [codeINSEE=" + codeINSEE + ", nomCommune=" + nomCommune + ", CP=" + codePostal + ", libelleAcheminement="
+				+ libelleAcheminement + ", ligne_5=" + ligne5 + ", lattitude=" + lattitude + ", longitude=" + longitude
 				+ "]";
 	}
 
