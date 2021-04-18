@@ -1,6 +1,6 @@
-projectKey=TestTWIC
+projectKey=MyProjectKey
 serverUrl=http://localhost:9000
 serverVersion=7.9.5.38598
-dashboardUrl=http://localhost:9000/dashboard?id=TestTWIC
-ceTaskId=AXjUnPAXj9SPvVBrvKu5
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXjUnPAXj9SPvVBrvKu5
+dashboardUrl=http://localhost:9000/dashboard?id=MyProjectKey
+ceTaskId=AXjlZmLgXHYcViisKzXT
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXjlZmLgXHYcViisKzXT

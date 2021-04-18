@@ -1,0 +1,8 @@
+com\blo\VilleBLO.class
+com\dao\Ville.class
+com\dao\VilleDao.class
+com\blo\VilleBLOImpl.class
+com\controller\VilleController.class
+com\Application.class
+com\config\JDBCConfiguration.class
+com\dao\VilleDaoImpl.class
